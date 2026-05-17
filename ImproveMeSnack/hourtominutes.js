@@ -1,6 +1,5 @@
 function hoursToMinutes(hours){
-
-    return hours * 60;
+  return hours * 60;
 
 }
 
