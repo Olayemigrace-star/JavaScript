@@ -3,13 +3,17 @@ const prompt = require("prompt-sync")();
 let username = prompt("Enter your Username: ")
 let password = Number(prompt("Enter your password: "))
 
+
 function details(username, password){
-if(username == "semicolon" && password =="231"){
-console.log("Login Successful!!")
-}
+
+if((username.toLowerCase() == "semicolon") && password == 231){
+    return "Login Successful!!";
+    }
 else{
-console.log("Invalid Login")
-}
+    return "Invalid Login";
+    }
+    
 }
 
-details(username, password);
+
+console.log(details(username, password))
